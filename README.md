@@ -88,7 +88,7 @@ to redraw the current task lists on the page.
 ## Project Structure
 
 ```text
-task-list/
+task-tracker/
 │
 ├── tasks.html
 └── scripts/
@@ -139,7 +139,7 @@ git clone https://github.com/dentoncd/Task-Tracker
 Navigate into the project folder:
 
 ```bash
-cd task-list
+cd task-tracker
 ```
 
 Then open `tasks.html` in a browser.
