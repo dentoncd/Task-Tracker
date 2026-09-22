@@ -133,7 +133,7 @@ Each category displays its current tasks as a list and updates immediately when 
 Clone the repository:
 
 ```bash
-git clone YOUR-REPOSITORY-URL
+git clone https://github.com/dentoncd/Task-Tracker
 ```
 
 Navigate into the project folder:
