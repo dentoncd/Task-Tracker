@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task Tracker</title>
+    <script src="/scripts/tasks.js"></script>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .task-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 10px;
+        }
+
+        .tasksList {
+            min-height: 300px;
+            background-color: azure;
+            padding: 10px;
+            border: solid 2px navy;
+        }
+
+        .taskBtn {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            display: block;
+            background-color: grey;
+            max-width: 250px;
+            text-align: center;
+            padding: 20px;
+            margin: 5px;
+            border: solid 1px black;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Task Tracker</h1>
+    <form>
+        <label for="newTask">New Task:</label><br>
+        <input type="text" id="newTask" placeholder="Complete Web Development Homework" name="newTask" size="50">
+        <input type="submit" value="Add Task">
+    </form>
+    <div class="task-container">
+        <div>
+            <h3>To Do:</h3>
+            <div id="tasksToDo" class="tasksList"></div>
+            <a href="#" id="addTask" class="taskBtn">Add top task to In Progress</a>
+        </div>
+        <div>
+            <h3>In Progress:</h3>
+            <div id="tasksInProgress" class="tasksList"></div>
+            <a href="#" id="completeTask" class="taskBtn">Complete top task</a>
+            <a href="#" id="removeTask" class="taskBtn">Remove top task</a>
+        </div>
+        <div>
+            <h3>Completed:</h3>
+            <div id="tasksCompleted" class="tasksList"></div>
+        </div>
+    </div>
+</body>
+
+</html>
